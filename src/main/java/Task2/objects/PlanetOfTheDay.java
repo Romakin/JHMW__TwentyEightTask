@@ -6,18 +6,19 @@ import java.io.*;
 import java.net.URL;
 import java.nio.file.Files;
 
-public class PlanetOfTheDay<S extends String> extends NasaDataObject {
+public class PlanetOfTheDay extends NasaDataObject {
 
-    S copyright;
-    S explanation;
-    S hdurl;
-    S date;
-    S media_type;
-    S service_version;
-    S title;
-    S url;
+    String copyright;
+    String explanation;
+    String hdurl;
+    String date;
+    String media_type;
+    String service_version;
+    String title;
+    String url;
 
-    public PlanetOfTheDay(S copyright, S explanation, S hdurl, S date, S media_type, S service_version, S title, S url) {
+    public PlanetOfTheDay(String copyright, String explanation, String hdurl, String date, String media_type,
+                          String service_version, String title, String url) {
         this.copyright = copyright;
         this.explanation = explanation;
         this.hdurl = hdurl;
@@ -28,35 +29,35 @@ public class PlanetOfTheDay<S extends String> extends NasaDataObject {
         this.url = url;
     }
 
-    public S getCopyright() {
+    public String getCopyright() {
         return copyright;
     }
 
-    public S getExplanation() {
+    public String getExplanation() {
         return explanation;
     }
 
-    public S getHdurl() {
+    public String getHdurl() {
         return hdurl;
     }
 
-    public S getDate() {
+    public String getDate() {
         return date;
     }
 
-    public S getMedia_type() {
+    public String getMedia_type() {
         return media_type;
     }
 
-    public S getService_version() {
+    public String getService_version() {
         return service_version;
     }
 
-    public S getTitle() {
+    public String getTitle() {
         return title;
     }
 
-    public S getUrl() {
+    public String getUrl() {
         return url;
     }
 

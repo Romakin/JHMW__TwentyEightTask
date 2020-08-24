@@ -1,16 +1,16 @@
 package Task1.objects;
 
-public class CatFact<S extends String, I extends Integer, E extends User> {
+public class CatFact< E extends User> {
 
-    S id;
-    S text;
-    S type;
-    I upvotes;
-    I userUpvoted;
+    String _id;
+    String text;
+    String type;
+    Integer upvotes;
+    Integer userUpvoted;
     E user;
 
-    public CatFact(S _id, S text, S type, I upvotes, I userUpvoted, E user) {
-        this.id = _id;
+    public CatFact(String _id, String text, String type, Integer upvotes, Integer userUpvoted, E user) {
+        this._id = _id;
         this.text = text;
         this.type = type;
         this.upvotes = upvotes;
@@ -19,7 +19,7 @@ public class CatFact<S extends String, I extends Integer, E extends User> {
     }
 
     public String getId() {
-        return id;
+        return _id;
     }
 
     public String getText() {
@@ -30,11 +30,11 @@ public class CatFact<S extends String, I extends Integer, E extends User> {
         return type;
     }
 
-    public I getUpvotes() {
+    public Integer getUpvotes() {
         return upvotes;
     }
 
-    public I getUserUpvoted() {
+    public Integer getUserUpvoted() {
         return userUpvoted;
     }
 
@@ -45,7 +45,7 @@ public class CatFact<S extends String, I extends Integer, E extends User> {
     @Override
     public String toString() {
         return "----------" + '\n' +
-                "id: " + id + '\n' +
+                "id: " + _id + '\n' +
                 "text: " + text + '\n' +
                 "type: " + type + '\n' +
                 "upVotes: " + upvotes + '\n' +

@@ -4,12 +4,12 @@ import com.google.gson.internal.LinkedTreeMap;
 
 import java.util.HashMap;
 
-public class User<HM extends HashMap<S, S>,S extends String> {
+public class User<HM extends HashMap<String, String>> {
 
-    S _id;
+    String _id;
     HM name;
 
-    public User(S _id, HM name) {
+    public User(String _id, HM name) {
         this._id = _id;
         this.name = name;
     }

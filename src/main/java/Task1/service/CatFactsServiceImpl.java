@@ -81,8 +81,8 @@ public class CatFactsServiceImpl implements CatFactsService {
                             String,
                             ArrayList<
                                     CatFact<
-                                        String, Integer,
-                                        User<HashMap<String, String>, String>
+                                        //String, Integer,
+                                        User<HashMap<String, String>>//, String>
                                     >
                             >
                     >>() {}.getType()
